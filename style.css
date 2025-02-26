@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(#ECDCFF, #FFFFFF);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+    /* border-radius: 1px solid; */
+}
+
+
+#navbar .logo img {
+    margin-left: 80px;
+    min-width: 90px;
+    margin-top: 2px;
+    height: 30px;
+}
+
+#navbar .search {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: 3px solid rgb(212, 206, 206);
+    border-radius: 10px;
+    align-items: center;
+}
+
+#navbar .search .search-icon img {
+    /* border: 1px solid; */
+    border-right: 1px solid rgb(212, 206, 206);
+    height: 23px;
+    padding: 10px;
+}
+
+#navbar .search .search-bar {
+    width: 800px;
+    height: 40px;
+    /* border: 1px solid; */
+}
+
+#navbar .login-icon img {
+    height: 40px;
+}
+
+#navbar .cart-icon img {
+    height: 40px;
+}
+
+#navbar .search .search-bar .input-box {
+    width: 800px;
+    height: 40px;
+    /* background-color: ; */
+    border-radius: 10px 10px;
+    border: none;
+    font-size: 20px;
+    outline-style: none;
+}
+
+#hero-section {
+    width: 80%;
+    margin: auto;
+    /* margin-right: ; */
+    /* padding: 16px; */
+}
+
+#hero-section img {
+    width: 1190px;
+    /* margin:  */
+}
+
+input:focus {
+    border: none;
+}
+
+.tagline{
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 150px;
+} 
+
+.container {
+    padding-left: 150px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.itemlist {
+    border: 2px solid rgb(197, 196, 196);
+    height: 175px;
+    width: 175px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    /*padding-left: 150px;*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.itemlist img{
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+}
+
+ .texts{
+    font-size: 20px;
+    text-align: center;
+}
+
+.accessoriesitem{
+    margin-left: 150px;
+    border: 2px solid rgb(197, 196, 196);
+    height: 320px;
+    width: 180px;
+    /* border-radius: 10px; */
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    /* justify-content: center; */
+    /* text-align: center; */
+    flex-direction: column;
+    gap: 50px;
+    /* padding-left: 150px; */    
+}
+
+.accessories-section img{
+    height: 130px;
+    width: 150px;
+    padding: 15px;
+}
+
+.add-cart{
+    border: 2px solid red;
+    color: red;
+    text-align: center;
+}
