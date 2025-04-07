@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Body</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+           
+        </tbody>
+    </table>
+  </body>
+  <script>
+    let api = "https://jsonplaceholder.typicode.com/posts";
+    
+    
+    fetch(api)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+          let tbody = document.getElementById("tbody");
+
+     let html = data.map(function (value) {
+        return `<tr>
+                    <td>${value.id}</td>
+                    <td>${value.title}</td>
+                    <td>${value.body}</td>
+                </tr>`;
+
+          
+            
+            });
+            tbody.innerHTML = html;
+            
+        });
+
+
+ 
+
+
+
+      
+  </script>
+</html>
